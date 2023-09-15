@@ -1,0 +1,21 @@
+pip install django-cors-headers
+
+views.py : 
+    from django.http import JsonResponse
+    from django.views.decorators.csrf import csrf_exempt  # Use this if you want to disable CSRF protection for this view
+    csrf_exempt
+
+
+
+settings.py : 
+    INSTALLED APP:
+        'corsheaders',
+
+
+    MIDDLEWARE : 
+        'corsheaders.middleware.CorsMiddleware',
+        'django.middleware.common.CommonMiddleware',
+
+
+    CORS_ALLOW_ALL_ORIGINS = True
+    CORS_ALLOW_CREDENTIALS = True
