@@ -17,7 +17,7 @@ button.addEventListener("click", function() {
 
 // Function to handle GET request
 function fetchData() {
-fetch('http://127.0.0.1:8000/',{    
+fetch('http://3.111.187.209:8000/',{    
     method: 'GET',
     headers: {
         'Content-Type': 'application/json',
@@ -57,7 +57,7 @@ function sendData(data) {
         Name: `${data.value}`,
     };
 
-    fetch('http://127.0.0.1:8000/', {
+    fetch('http://3.111.187.209:8000/', {
         method: 'POST',
         headers: {
         'Content-Type': 'application/json',
