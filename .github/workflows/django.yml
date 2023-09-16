@@ -51,7 +51,7 @@ jobs:
 
     - name: Commit changes
       run: |
-        git config --global user.name 'john-patel'
+        git config --global user.name 'jhon-patel'
         git config --global user.email 'parthpatelaa19@gmail.com'
         git add .
         git commit -m 'Update backend URLs to use HTTP'
